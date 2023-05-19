@@ -1,3 +1,6 @@
+<img width="1186" alt="image" src="https://github.com/Havid-B/pay-stream/assets/86498114/d8bf19c7-5fa7-4490-aad3-59891715458f">
+
+
 ### Apps and Packages
 
 - `api`: a nestjs server
