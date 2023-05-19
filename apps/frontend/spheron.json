@@ -1,0 +1,15 @@
+{
+  "configuration": {
+    "name": "tipStream",
+    "protocol": "ipfs",
+    "rootPath": "./",
+    "framework": {
+      "name": "react",
+      "configuration": {
+        "installCommand": "yarn install",
+        "buildCommand": "yarn build",
+        "publishDirectory": "build"
+      }
+    }
+  }
+}
