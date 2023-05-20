@@ -1,4 +1,4 @@
-# PAY STREAM (Click to [Visit](https://tipstream-740d17.spheron.app/))
+# PAY STREAM
 
 Get Paid for your video content. 
 
