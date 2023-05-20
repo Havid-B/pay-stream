@@ -35,7 +35,7 @@ export default function Home() {
                 Fee
               </h3>
               <p className="mb-3 text-lg font-light text-docsGrey-400 md:text-xl dark:text-docsGrey-400">
-                As a creator, uploading a new content is free. Tippers and Buyers do not pay any hidden fees. To keep the platform running, we take a small bite from every tip and purchase
+                As a creator, uploading a new content is free. Tippers and Buyers do not pay any hidden fees. To keep the platform running, we take a small bite(0.1%) from every tip and purchase
               </p>
             </div>
             
