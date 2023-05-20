@@ -2,7 +2,9 @@
 
 Get Paid for your video content. 
 
-<img width="1633" alt="image" src="https://user-images.githubusercontent.com/76119744/226216327-b6a1202e-f9e9-4336-9305-0e270257fa94.png">
+[Click to View DEMO](https://bit.ly/3Mj81x7)
+
+<img width="1186" alt="image" src="https://github.com/Havid-B/pay-stream/assets/86498114/d8bf19c7-5fa7-4490-aad3-59891715458f">
 
 ## Tools used
 
