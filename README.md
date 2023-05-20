@@ -2,7 +2,7 @@
 - [Click to View deployed NFT Marketplace Contract](https://alfajores.celoscan.io/address/0x7daaf9b1b46eeb8309c9652c4d11600dbf66574f)
 
 
-<img width="1186" alt="image" src="https://github.com/Havid-B/pay-stream/assets/86498114/d8bf19c7-5fa7-4490-aad3-59891715458f">
+<img width="1201" alt="image" src="https://github.com/Havid-B/pay-stream/assets/86498114/264adf07-253a-4558-bbfc-8beb0ba67a0c">
 
 ### Apps and Packages
 
