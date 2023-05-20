@@ -9,7 +9,7 @@ Get Paid for your video content.
 ## Tools used
 
 - Spheron CLI was used to deploy the front end to Spheron Cloud
-- Videos are hosted using Spheron Storage SDK which is used in an API [backend]()
+- Videos are hosted using Spheron Storage SDK which is used in an API
 - Pay Stream SDK was used with an Nft Market place Module 
 
 ## Run the app
