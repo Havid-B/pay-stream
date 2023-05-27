@@ -1,5 +1,6 @@
 - [Click to View DEMO](https://bit.ly/3Mj81x7)
 - [Click to View deployed NFT Marketplace Contract](https://alfajores.celoscan.io/address/0x7daaf9b1b46eeb8309c9652c4d11600dbf66574f)
+- [Click to View deployed Frontend](https://pay-stream-8e0f5d.spheron.app)
 
 
 <img width="1201" alt="image" src="https://github.com/Havid-B/pay-stream/assets/86498114/264adf07-253a-4558-bbfc-8beb0ba67a0c">
