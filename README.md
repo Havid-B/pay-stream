@@ -25,6 +25,7 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Develop
 - rename env.example in [apps/frontend](https://github.com/Havid-B/pay-stream/blob/main/apps/frontend/.env-example) and [apps/api](https://github.com/Havid-B/pay-stream/blob/main/apps/api/.env.example) to .env (You can use the values there as is)
+- Create a Tatum.io account, create a testnet API key and update the [apps/frontend](https://github.com/Havid-B/pay-stream/blob/main/apps/frontend/.env-example)
 - To develop all apps and packages, run the following command in the root folder:
 
 ```
