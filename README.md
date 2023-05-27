@@ -19,6 +19,7 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 - Spheron CLI was used to deploy the front end to Spheron Cloud
 - Videos are hosted using Spheron Storage SDK which is used in an API
+- NFTs are fetched using Tatum
 
 
 ### Develop
