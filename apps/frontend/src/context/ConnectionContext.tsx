@@ -1,7 +1,7 @@
 import { useMetaMask } from "metamask-react";
 import { createContext, useEffect, useState } from "react";
 import { CHAIN_ID_HEX, CHAIN_ID_NUM, CONTRACT_ADDRESS } from "../constants";
-import { AccountService, Nft721MarketPlace, TransactionService } from "pay-stream-sdk";
+import { AccountService, MasaService, Nft721MarketPlace, TransactionService } from "pay-stream-sdk";
 
 interface ConnectionContextValue {
     connected: any;
@@ -20,17 +20,47 @@ export const ConnectionContext = createContext<ConnectionContextValue>({
     // connected user details
     const [userInfo, setUserInfo] = useState({
       celo_balance: '0',
-      address: null
+      address: null,
+      soulName: null,
     });
 
     const { status, connect, account, chainId, switchChain, ethereum } = useMetaMask();
 
+    const getSoulName = async () => {
+      let userSoulname = await MasaService.resolveAddress(ethereum);
+      if(!userSoulname) {
+        const inputValidSoulName = async (message: string) => {
+          let input = window.prompt(message);
+          let check =  await MasaService.isSoulNameValid(input, ethereum) as {isValid: boolean, message: string};
+          while(!check.isValid) {
+            input =  window.prompt(`${check.message}, Try again`);;
+            check = await MasaService.isSoulNameValid(input, ethereum);
+          }
+
+          return input;
+        }
+
+        let soulName = await inputValidSoulName("First time using this site? Setup a soulName");
+        let soulNameIsAvailable =  await MasaService.isSoulNameAvailable(soulName, ethereum);
+
+        while(!soulNameIsAvailable) {
+          soulName = await inputValidSoulName(`${soulName} already in use by someone else, Try another soulName`);
+          soulNameIsAvailable = !await MasaService.isSoulNameAvailable(soulName, ethereum);
+        }
+
+        userSoulname = await MasaService.createSoulName(soulName, ethereum, process.env.REACT_APP_SOUL_NAME_CONTRACT_ADDRESS, process.env.REACT_APP_API);
+      }
+
+    }
+
     const getAccountDetails = async (account: string) => {
-      const ethBalance = await AccountService.getBalance(account, CHAIN_ID_NUM);
+      const celoBalance = await AccountService.getBalance(account, CHAIN_ID_NUM);
+      const soulName = await getSoulName();
       
       setUserInfo({
-        celo_balance: ethBalance.rawBalance,
-        address: account
+        celo_balance: celoBalance.rawBalance,
+        address: account, 
+        soulName,
       })
     }
 
@@ -40,7 +70,8 @@ export const ConnectionContext = createContext<ConnectionContextValue>({
       if (status === "notConnected") {
         setUserInfo({
           celo_balance: '0',
-          address: null
+          address: null,
+          soulName: null,
         });
         connect();
       }
