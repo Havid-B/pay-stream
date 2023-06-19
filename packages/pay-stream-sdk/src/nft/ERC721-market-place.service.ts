@@ -6,7 +6,7 @@ import { AddressZero } from "@ethersproject/constants";
 import { ethers } from "ethers";
 import { ExternalProvider } from "@ethersproject/providers";
 import { 
-  LiqERC721MarketPlace__factory,
+  ERC721MarketPlace__factory,
 } from "../../typechain-types";
 import { getChainProvider } from "../factory/chain-provider";
 import { getWallet } from "../common/utils";
@@ -28,8 +28,8 @@ export abstract class Nft721MarketPlace {
 
     
     contractFactory = new ethers.ContractFactory(
-      LiqERC721MarketPlace__factory.abi,
-      LiqERC721MarketPlace__factory.bytecode,
+      ERC721MarketPlace__factory.abi,
+      ERC721MarketPlace__factory.bytecode,
       wallet
     );
 
@@ -51,7 +51,7 @@ export abstract class Nft721MarketPlace {
     chainId: number,
     provider: ExternalProvider,
   ): Promise<string> {
-    const contract = LiqERC721MarketPlace__factory.connect(
+    const contract = ERC721MarketPlace__factory.connect(
       AddressZero,
       await getChainProvider(chainId)
     ).attach(contractAddress!);
@@ -76,7 +76,7 @@ export abstract class Nft721MarketPlace {
     chainId: number,
     provider: ExternalProvider,
   ): Promise<boolean> {
-    const contract = LiqERC721MarketPlace__factory.connect(
+    const contract = ERC721MarketPlace__factory.connect(
       AddressZero,
       await getChainProvider(chainId)
     ).attach(contractAddress!);
@@ -93,7 +93,7 @@ export abstract class Nft721MarketPlace {
     chainId: number,
     provider: ExternalProvider,
   ): Promise<string> {
-    const contract = LiqERC721MarketPlace__factory.connect(
+    const contract = ERC721MarketPlace__factory.connect(
       AddressZero,
       await getChainProvider(chainId)
     ).attach(contractAddress!);
@@ -118,7 +118,7 @@ export abstract class Nft721MarketPlace {
     chainId: number,
     provider: ExternalProvider,
   ): Promise<string> {
-    const contract = LiqERC721MarketPlace__factory.connect(
+    const contract = ERC721MarketPlace__factory.connect(
       AddressZero,
       await getChainProvider(chainId)
     ).attach(contractAddress!);
@@ -145,7 +145,7 @@ export abstract class Nft721MarketPlace {
     chainId: number,
     provider: ExternalProvider,
   ): Promise<string> {
-    const contract = LiqERC721MarketPlace__factory.connect(
+    const contract = ERC721MarketPlace__factory.connect(
       AddressZero,
       await getChainProvider(chainId)
     ).attach(contractAddress!);
@@ -171,7 +171,7 @@ export abstract class Nft721MarketPlace {
     tokenID: string,
     chainId: number,
   ) {
-    const contract = LiqERC721MarketPlace__factory.connect(
+    const contract = ERC721MarketPlace__factory.connect(
       AddressZero,
       await getChainProvider(chainId)
     ).attach(contractAddress!);

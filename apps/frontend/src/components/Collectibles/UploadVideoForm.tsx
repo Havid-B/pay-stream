@@ -78,7 +78,7 @@ export const UploadVideoForm: React.FC<Props> = (props) => {
     <div className="inline-flex" style={{ padding: 20 }}>
       <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a
-          href="https://docs.liquality.io/functions/auth#create-a-wallet"
+          href="#"
           target="_blank"
           rel="noreferrer"
         >

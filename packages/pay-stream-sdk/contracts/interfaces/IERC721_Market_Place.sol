@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity 0.8.19;
 
-interface ILiqERC721MarketPlace {
+interface IERC721MarketPlace {
     struct TokenInfo {
         bool sellable;
         uint price;

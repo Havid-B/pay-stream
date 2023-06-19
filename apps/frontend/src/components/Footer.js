@@ -7,7 +7,7 @@ const Footer = () => {
         <span className="text-sm text-docsGrey-500 sm:text-center dark:text-docsGrey-400">
           © 2022{" "}
           <a href="https://flowbite.com/" className="hover:underline">
-            Liquality SDK Demo.xyz™
+            Pay Stream™
           </a>
           . All Rights Reserved.
         </span>

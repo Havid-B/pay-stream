@@ -9,7 +9,7 @@
 
 - [api](https://github.com/Havid-B/pay-stream/tree/main/apps/api): a nestjs server
 - [frontend](https://github.com/Havid-B/pay-stream/tree/main/apps/frontend): a create-react-app for user-facing site
-- [pay-stream-sdk](https://github.com/Havid-B/pay-stream/tree/main/packages/pay-stream-sdk): a typescript library that contains the [Nft Market Place contract](https://github.com/Havid-B/pay-stream/blob/main/packages/pay-stream-sdk/contracts/nft/LIQ_ERC721_Market_Place.sol) created for Pay Stream and other functions to facilitate blockchain interaction including the deployment of the Nft Market Place Contract for Pay Stream
+- [pay-stream-sdk](https://github.com/Havid-B/pay-stream/tree/main/packages/pay-stream-sdk): a typescript library that contains the [Nft Market Place contract](https://github.com/Havid-B/pay-stream/blob/main/packages/pay-stream-sdk/contracts/nft/ERC721_Market_Place.sol) created for Pay Stream and other functions to facilitate blockchain interaction including the deployment of the Nft Market Place Contract for Pay Stream
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 

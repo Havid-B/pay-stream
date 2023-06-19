@@ -40,6 +40,7 @@
     "url": "^0.11.0"
   },
   "dependencies": {
+    "@masa-finance/masa-sdk": "^3.4.10",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.1.2",

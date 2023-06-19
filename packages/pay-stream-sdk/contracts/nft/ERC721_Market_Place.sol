@@ -9,9 +9,9 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
 
-import "./ILIQ_ERC721_Market_Place.sol";
+import "../interfaces/IERC721_Market_Place.sol";
 
-contract LiqERC721MarketPlace is ILiqERC721MarketPlace, ERC721, ERC721URIStorage, Pausable, Ownable, ERC721Burnable {
+contract ERC721MarketPlace is IERC721MarketPlace, ERC721, ERC721URIStorage, Pausable, Ownable, ERC721Burnable {
     using Counters for Counters.Counter;
     using Address for address;
     uint platformFee; // 100 is same as 1%, 1000 is same as 0.1%
